@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="./assets/gear-icon.svg" />
-    <title>Camilo Lyons</title>
+    <title>Hassan Latif</title>
   </head>
   <body>
     <header class="item">
@@ -104,7 +104,7 @@
                 <figure>
                   <img src="./assets/case-portfolio.svg" alt="case icon" class="icon">
                 </figure>
-                <p class="grey-p">Expert in planning, control, review, and document coding.</p>
+                <p class="grey-p">Able to Work with limited guidance and Supervision</p>
 
               </article>
               <article class="item">
@@ -229,15 +229,7 @@
               </ul>
             </div>
         
-            <div class="job">
-              <h3>Dawood Engineering Pvt. Ltd. (Apr 2021 – Dec 2021)</h3>
-              <p><strong>Position:</strong> CNC Operator</p>
-              <ul>
-                <li>Handling CNC lathe and milling operations.</li>
-                <li>Performing job dialing and offsetting.</li>
-                <li>Managing manual programming and quality inspection.</li>
-              </ul>
-            </div>
+            
         
             <div class="job">
               <h3>Procon Engineering (Jan 2022 – Oct 2023)</h3>
@@ -248,6 +240,18 @@
                 <li>Managing manual programming.</li>
                 <li>Supervising CNC operators for lathe and milling.</li>
                 <li>Ensuring job quality inspection.</li>
+              </ul>
+            </div>
+
+
+
+            <div class="job">
+              <h3>Dawood Engineering Pvt. Ltd. (Apr 2021 – Dec 2021)</h3>
+              <p><strong>Position:</strong> CNC Operator</p>
+              <ul>
+                <li>Handling CNC lathe and milling operations.</li>
+                <li>Performing job dialing and offsetting.</li>
+                <li>Managing manual programming and quality inspection.</li>
               </ul>
             </div>
           </div>
@@ -337,8 +341,19 @@
       <section class="projects" id="proyectos">
         <h2>Projects</h2>
         <div class="projects-container">
+
+
+          <!-- 1st -->
+          
+
+
+
+
+
+
+
           <article class="project-card">
-            <div id="carousel1" class="carousel slide">
+            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button
                   type="button"
@@ -403,19 +418,13 @@
                   aria-label="Slide 10"
                 ></button>
               </div>
-
-              <!-- carousel Item--01------ -->
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Plano Filtro Manga AC"
-              >
+          
+              <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
                     src="./assets/1stpart.jpg"
                     class="d-block w-100"
-                    alt="plano filtro"
+                    alt="Plano Filtro"
                   />
                 </div>
                 <div class="carousel-item">
@@ -439,54 +448,74 @@
                     alt="..."
                   />
                 </div>
-                
-                
-                
               </div>
-              <!-- carosel 01 end -->
-
-
-
+          
               <button
-  class="carousel-control-prev"
-  type="button"
-  data-bs-target="#carousel1"
-  data-bs-slide="prev"
->
-  <span
-    class="carousel-control-prev-icon"
-    aria-hidden="true"
-  ></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button
-  class="carousel-control-next"
-  type="button"
-  data-bs-target="#carousel1"
-  data-bs-slide="next"
->
-  <span
-    class="carousel-control-next-icon"
-    aria-hidden="true"
-  ></span>
-  <span class="visually-hidden">Next</span>
-</button>
-</div>
-<h3
-  data-bs-toggle="modal"
-  data-bs-target="#exampleModal"
-  data-bs-whatever="Filter Manga AC Plan"
->
-operation of  surface finished ball.nose
-</h3>
-<p 
-  data-bs-toggle="modal"
-  data-bs-target="#exampleModal"
-  data-bs-whatever="Escalator Plan description here"
->
- 
-</p>
-     </article>
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          
+            <h3 id="carousel-caption">
+             
+            </h3>
+          
+            <p data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Escalator Plan description here">
+              <!-- Any additional description can go here -->
+            </p>
+          </article>
+          
+          <script>
+            // JavaScript to update the h3 text based on the active carousel item
+            const captions = [
+              "Part File",
+              "Bending Punch",
+              "Operaion One Ruffing Process",
+              "2nd Operation Deep Hole Process"
+            ];
+          
+            // Add event listener for carousel slide change
+            const carouselElement = document.querySelector('#carousel1');
+            const h3TextElement = document.querySelector('#carousel-caption');
+            
+            carouselElement.addEventListener('slid.bs.carousel', function (event) {
+              // Get the index of the active slide
+              const activeIndex = event.to;
+              
+              // Update the h3 text based on the active slide index
+              h3TextElement.textContent = captions[activeIndex] || "operation of surface finished ball.nose";
+            });
+          </script>
+          
+
+
+
+
+
+
+
+
+
 
      <!-- card 1 end -->
 
@@ -494,7 +523,7 @@ operation of  surface finished ball.nose
 
 
 
-
+<!-- 2nd -->
      <article class="project-card">
       <div id="carousel2" class="carousel slide">
         <div class="carousel-indicators">
@@ -549,117 +578,71 @@ operation of  surface finished ball.nose
       </h3>
     </article>
     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
     <article class="project-card">
-      <div id="carousel3" class="carousel slide">
+      <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carousel3"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel3"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel3"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel3"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel3"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel3"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel3"
-            data-bs-slide-to="6"
-            aria-label="Slide 7"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel3"
-            data-bs-slide-to="7"
-            aria-label="Slide 8"
-          ></button>
+          <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div
-          class="carousel-inner"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          data-bs-whatever="Pf"
-        >
+    
+        <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="./assets/ruffing-1.jpg"
-              class="d-block w-100"
-              alt="Image 1"
-            />
+            <img src="./assets/ruffing-1.jpg" class="d-block w-100" alt="Image 1">
           </div>
           <div class="carousel-item">
-            <img
-              src="./assets/ruffing-process-2.jpg"
-              class="d-block w-100"
-              alt="Image 2"
-            />
+            <img src="./assets/ruffing-process-2.jpg" class="d-block w-100" alt="Image 2">
           </div>
           <div class="carousel-item">
-            <img
-              src="./assets/3rd-drilling.jpg"
-              class="d-block w-100"
-              alt="Image 3"
-            />
+            <img src="./assets/3rd-drilling.jpg" class="d-block w-100" alt="Image 3">
           </div>
-         <!-- 3rd end -->
-         
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carousel3"
-          data-bs-slide="prev"
-        >
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carousel3"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <h3
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        data-bs-whatever="Pf"
-      >
-    Ruffing Process
+    
+      <h3 id="carousel-text" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Pf">
+       
       </h3>
     </article>
+    
+    <script>
+      const carousel = document.querySelector('#carousel3');
+      const h3Text = document.querySelector('#carousel-text');
+      
+      const descriptions = [
+        'Ruffing Operation',
+        'Ball Nose Surfacing Operation',
+        'Drilling Operation'
+      ];
+      
+      carousel.addEventListener('slid.bs.carousel', function () {
+        const activeIndex = [...carousel.querySelectorAll('.carousel-item')].indexOf(carousel.querySelector('.carousel-item.active'));
+        h3Text.textContent = descriptions[activeIndex];
+      });
+    </script>
+    
 
     
 
@@ -699,13 +682,7 @@ operation of  surface finished ball.nose
                     alt="..."
                   />
                 </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pasarela-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
+               
               </div>
               <button
                 class="carousel-control-prev"
@@ -886,8 +863,12 @@ operation of  surface finished ball.nose
           </article>
          
          
+
+
+
+
           <article class="project-card">
-            <div id="carousel10" class="carousel slide">
+            <div id="carousel10" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button
                   type="button"
@@ -916,12 +897,7 @@ operation of  surface finished ball.nose
                   aria-label="Slide 4"
                 ></button>
               </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Prueba portico movil"
-              >
+              <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
                     src="./assets/surface-finish-final.jpg"
@@ -976,14 +952,42 @@ operation of  surface finished ball.nose
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Prueba portico movil"
-            >
-            Surface Finished Program Ball.Nose
+            <h3 id="carousel-caption10">
+              Surface Finished Program Ball.Nose
             </h3>
           </article>
+          
+          <script>
+            // JavaScript to update the h3 text based on the active carousel item
+            const captions10 = [
+              "Surface Finished Program Ball.Nose",
+              "Ruffing",
+              "Surface Finish Type 2",
+              "Surface Finish Type 3"
+            ];
+          
+            // Add event listener for carousel slide change
+            const carouselElement10 = document.querySelector('#carousel10');
+            const h3TextElement10 = document.querySelector('#carousel-caption10');
+            
+            carouselElement10.addEventListener('slid.bs.carousel', function (event) {
+              // Get the index of the active slide
+              const activeIndex10 = event.to;
+              
+              // Update the h3 text based on the active slide index
+              h3TextElement10.textContent = captions10[activeIndex10] || "Surface Finished Program Ball.Nose";
+            });
+          </script>
+          
+
+
+
+
+
+
+
+
+
           <article class="project-card">
             <div id="carousel11" class="carousel slide">
               <div class="carousel-indicators">
